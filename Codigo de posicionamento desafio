@@ -1,0 +1,65 @@
+import { StatusBar, setStatusBarBackgroundColor } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+
+export default function App() {
+return (
+<View style={styles.container}>
+  <Text style={[styles.numero, {color:'black'}]}>21</Text>
+  <Text style={[styles.sala, {backgroundColor:'pink'}]}>07</Text>
+  <Text style={[styles.texto, {color: 'blue'}]}>João Victor de Souza Carvalho</Text>
+  <Text style={[styles.textos, {color: 'red'}]}>TETÉ PICERNENTA</Text>
+</View>
+);
+}
+
+
+const styles = StyleSheet.create({
+
+container:{
+  flex: 1,
+  backgroundColor: 'lightgray' , 
+  alignItems: 'center',
+  justifyContent:'center'
+},
+texto: {
+fontSize: 30,
+fontWeight:'bold',
+alignItems: 'center',
+justifyContent: 'center',
+left: '30%' ,
+},
+
+numero: {
+
+fontSize:25,
+fontStyle:'italic',
+alignItems: 'center',
+justifyContent: 'center',
+right:'30%',
+top:'25%',
+borderBottomColor: 'black',
+borderBottomWidth: 2,
+marginBottom: 30,
+},
+
+sala:{
+fontSize: 20,
+},
+
+textos: {
+
+  fontSize: 30,
+  fontWeight:'extrabold',
+  alignItems: 'left',
+  justifyContent: 'left',
+  left: '40%' ,
+  },
+
+
+
+
+
+
+
+});
