@@ -5,7 +5,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
 return (
 <View style={styles.container}>
-  <Text style={[styles.numero, {color:'black'}]}>21</Text>
+  <Text style={[styles.numero, {color:'black'}]}>22</Text>
   <Text style={[styles.sala, {backgroundColor:'pink'}]}>07</Text>
   <Text style={[styles.texto, {color: 'blue'}]}>João Victor de Souza Carvalho</Text>
   <Text style={[styles.textos, {color: 'red'}]}>TETÉ PICERNENTA</Text>
@@ -54,6 +54,10 @@ textos: {
   alignItems: 'left',
   justifyContent: 'left',
   left: '40%' ,
+  orderBottomColor: 'purple',
+borderBottomWidth: 2,
+marginBottom: 30,
+  
   },
 
 
